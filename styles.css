@@ -1,0 +1,528 @@
+/* You can add global styles to this file, and also import other style files */
+h1 {
+    color: #369;
+    font-family: 'Open Sans',Arial, Helvetica, sans-serif;
+    font-size: 250%;
+  }
+  button,a{
+    cursor:pointer;
+  }
+  .dashRouteBox h2{
+    margin:0px !important;
+  }
+  html,body{
+    margin:0;
+    padding:0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans',Arial, Helvetica, sans-serif !important;
+  }
+  /*loader*/
+  .lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 104px;
+  height: 104px;
+  margin:18% 46%;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 71px;
+  height: 71px;
+  margin: 6px;
+  border: 6px solid black;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: black transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+    border-color: #d41970 transparent transparent transparent;
+  }
+  100% {
+    transform: rotate(360deg);
+    border-color: #753188 transparent transparent transparent;
+  }
+}
+  app-root div{
+      margin:0 auto;
+  }
+  .body,.mainDiv{
+    height:100%;
+    width:100%;
+  
+  }
+  app-root div h1{
+    
+    font-size:24px;
+  }
+  .aetnaLogo{
+    background-image: url('./assets/images/aetnaLogo.png');
+    background-position: center;
+    height: 34px;
+    background-repeat: no-repeat;
+}
+.logoDashBoard{
+  padding:10px 0 0 30px !important;
+}
+.loginLogo{
+    width:81px;
+    height:62px;
+    background-image: url('./assets/images/BankApplication.png');
+    background-repeat: no-repeat;
+    margin:0px auto;
+    padding:0px;
+    background-size: 80%;
+    background-position: center;
+}
+.loginSection{
+    width:100%;
+    height:100%;
+}
+.loginSection{
+    /*background-image:url('./assets/images/BG.jpg');*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background: linear-gradient(to bottom right, #7a3090 , #cf1c71);
+}
+.dashRouteBox{
+  min-height:80%;
+  padding-bottom:2%;
+  width:100%;
+  background: #e1e1e1;
+}
+
+.dashBoardHead{
+  height:11%;
+  width:100%;
+  background:#803c95;
+  margin:0px !important;
+}
+footer{
+  width:100%;
+  text-align: center;
+  font-size:12px;
+  padding:1% 0;
+}
+.paddingtop10{
+    padding-top:4%;
+}
+.loginBody input[type="text"]{
+    background-image:url('./assets/images/username.png');
+}
+.loginBody input[type="password"]{
+    background-image:url('./assets/images/password.png');
+}
+.dashBoardNav ul li:first-child a,.dashBoardNav ul li:nth-child(2) a,
+.dashBoardNav ul li:nth-child(3) a,.dashBoardNav ul li:nth-child(4) a,
+.dashBoardNav ul li:nth-child(5) a,.dashBoardNav ul li:nth-child(6) a{
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size:20px !important;
+}
+.dashBoardNav ul li:first-child a{
+  background-image:url('./assets/images/Home.png');
+  background-size:32%;
+}
+.dashBoardNav ul li:nth-child(2) a{
+  background-image:url('./assets/images/Customers.png');
+  background-size: 21%;
+}
+.dashBoardNav ul li:nth-child(3) a{
+  background-image:url('./assets/images/Invoices.png');
+  background-size: 28% 36%;
+}
+.dashBoardNav ul li:nth-child(4) a{
+  background-image:url('./assets/images/AuditLogs.png');
+  background-size: 21%;
+}
+.dashBoardNav ul li:nth-child(5) a{
+  background-image:url('./assets/images/Reports.png');
+  background-size: 24%;
+}
+.dashBoardNav ul li:nth-child(6) a{
+  background-image:url('./assets/images/BulkUploads.png');
+  background-size: 16%;
+}
+
+/*hover state */
+/*
+.dashBoardNav ul li:first-child a:hover{
+  background-image:url('./assets/images/HomeActive.png');
+  background-size:32%;
+}
+.dashBoardNav ul li:nth-child(2) a:hover{
+  background-image:url('./assets/images/CustomersActive.png');
+  background-size: 21%;
+}
+.dashBoardNav ul li:nth-child(3) a:hover{
+  background-image:url('./assets/images/InvoicesActive.png');
+  background-size: 28% 38%;
+}
+.dashBoardNav ul li:nth-child(4) a:hover{
+  background-image:url('./assets/images/AuditLogsActive.png');
+  background-size: 21%;
+}
+.dashBoardNav ul li:nth-child(5) a:hover{
+  background-image:url('./assets/images/ReportsActive.png');
+  background-size: 24%;
+}
+.dashBoardNav ul li:nth-child(6) a:hover{
+  background-image:url('./assets/images/BulkUploadsActive.png');
+  background-size: 16%;
+}
+/*button style*/
+.secondaryButtonBlue{
+  border:1px solid #7a3090;
+  background:none;
+      width: 85px;
+    height: 35px;
+    border-radius: 17px;
+    margin-top:-11px;
+}
+.searchCustomer .searchButton{
+  width:35px;
+  height:35px;
+  background-color:#d41970;
+  border:none;
+  border-radius:50%;
+  /*background:url('./assests/images/')*/
+}
+.viewIcon,.editIcon{
+  cursor:pointer;
+  display: inline-block;
+  width:15px;
+  height:15px;
+  margin:0 5px;
+}
+.viewIcon{
+  background-image:url('./assets/images/View.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.editIcon{
+  background-image:url('./assets/images/Edit.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.addIcon,.errorIcon {
+    width: 15px;
+    height: 15px;
+    background: #d41970;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    color: white;
+    padding-right: 0.2px;
+    font-size: 11px;
+}
+.addIcon{
+  font-size:11.4px;
+}
+.errorIcon:before,.addIcon:before{
+  content:'\271A';
+}
+.errorIcon{
+  transform:rotate(45deg);
+}
+.sort{
+      width: 15px;
+    height: 15px;
+    color: black;
+    background: white;
+    border-radius: 50%;
+    font-size: 10px;
+    display: inline-block;
+    padding-left: 2.1px;
+}
+.sortUp:before{
+  content:'\25B2';
+}
+.sortDown:before{
+  content:'\25BC';
+}
+.leftArrow:before,.rightArrow:before{
+  content:'\25B2';
+  font-size: 11px;
+}
+.leftArrow{
+      transform: rotate(-90deg);
+    display: inline-block;
+    margin-right: 10px;
+}
+.rightArrow{
+  transform: rotate(90deg);
+    display: inline-block;
+    margin-left: 10px;
+}
+.searchButton{
+  vertical-align:bottom;
+  background-image:url('./assets/images/Search.png');
+  background-repeat:no-repeat;
+  background-position:center;
+}
+.effDateInput,.addEffDate{
+  background-image:url('./assets/images/Calendar.png');
+  background-repeat:no-repeat;
+  background-position:95% 48%;
+}
+.Pending .statusIcon{
+   background-image:url('./assets/images/Pending.png');
+  background-repeat:no-repeat;
+      display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-position: 100%;
+    margin-right:8px;
+    vertical-align: top;
+}
+.Approved .statusIcon{
+   background-image:url('./assets/images/Approved.png');
+  background-repeat:no-repeat;
+      display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-position: 100%;
+    margin-right:8px;
+    vertical-align: top;
+}
+.Terminated .statusIcon{
+   background-image:url('./assets/images/Terminated.png');
+  background-repeat:no-repeat;
+      display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-position: 100%;
+    margin-right:8px;
+    vertical-align: top;
+}
+.statusText{
+  display: inline-block;
+  vertical-align: top;
+  padding-top:3px;
+}
+.inlineBlock{
+  display: inline-block;
+}
+.disabled{
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+/*datepicker styles*/
+.bs-datepicker-container{
+  padding:0px !important;
+}
+.bs-datepicker-head .next{
+  float:right;
+}
+.bs-datepicker-head .previous{
+  float:left;
+}
+.bs-datepicker-head{
+  background-color:white !important;
+  text-align:center !important;
+}
+.bs-datepicker-head button{
+  color:#d41970 !important;
+}
+.bs-datepicker-head button.current {
+  margin: 0 0 0 0 !important;
+  padding:0 7px !important;
+  border-radius: 0px !important;
+  border-bottom: 1px solid #d41970;
+  font-size:14px;
+  font-weight: 500;
+}
+table.days.weeks th {
+  font-weight: 700;
+  color: black;
+}
+.bs-datepicker-body table td span{
+  border-radius:0 !important;
+  background:white !important;
+}
+.bs-datepicker-body table td span:hover,.theme-green .bs-datepicker-body table td span.selected,.currentDate{
+  color:#d41970 !important;
+  border-bottom:1px solid #d41970 !important;
+}
+.week{
+  display: none;
+}
+.days.weeks th:first-child{
+  display: none !important;
+}
+.is-other-month{
+  display:none !important;
+}
+.bs-datepicker-body{
+  min-height:100% !important;
+}
+/*prevent default browser styles ie */
+
+input::-ms-clear, input::-ms-reveal {
+  display: none;
+}
+.ng2-auto-complete-wrapper{
+  margin-left: 35px !important; 
+  float: left !important; 
+  position: relative !important;
+  
+}
+div.ng2-auto-complete {
+  background:none;
+  margin-top:-20px;
+  z-index: -9999 !important;
+  padding-top:20px;
+  border:1px solid #e1e1e1;
+  border-radius:8px;
+  border-top:none;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  margin-left:10%;
+  width:100%;
+}
+div.ng2-auto-complete ul{
+  background:transparent;
+  max-height:200px;
+  overflow-y: scroll;
+  border:none;
+}
+.customerInput{
+  margin:0 1% 0 10% !important;
+}
+div.ng2-auto-complete ul li{
+  border:none;
+  font-size:12px;
+  padding:5px 5px 5px 10px;
+  background:white;
+  text-align:left;
+  align-content: center;
+}
+div.ng2-auto-complete ul li.selected{
+  background:white;
+}
+div.ng2-auto-complete ul li:hover{
+  background:#7a3090;
+  color:white;
+}
+button.light.edit{
+  border:1px solid #d41970;
+  border-radius:15px;
+  background:transparent;
+  color:#d41970;
+  width:100%;
+  height:30px;
+}
+button.filled.edit{
+  border:none;
+  border-radius:15px;
+  background:#d41970;
+  color:white;
+  width:100%;
+  height:30px;
+}
+.nav.nav-tabs{
+  display: none !important;
+}
+.selectInfoTab div.col-md-2{
+  max-width:14.28%;
+  text-align:center;
+}
+.selectInfoTab div.col-md-2:last-child{
+  max-width:14.32%;
+}
+.chartjs-size-monitor-expand,doughnutchart div{
+  margin:0 !important;
+}
+doughnutchart canvas{
+  margin-left:-22%;
+}
+.selectInfoPanel canvas{
+  width: 234px !important;
+  height: 120px !important;
+}
+.customerCount .col-md-4{
+  background-image:url('./assets/images/Customers_dash.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 65%;
+}
+.missingInfo .col-md-4{
+  background-image:url('./assets/images/MissingInfo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 65%;
+}
+.requestsPending p,.customerCount p{
+  text-align:right;
+}
+.requestsPending .col-md-3{
+  background-image:url('./assets/images/Manage-Requests.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 84%;
+}
+.carousel h2{
+  padding-left:11px;
+}
+.carousel div{
+  padding-right: 0;
+  padding-left:18px;
+}
+.topLinks .dropdown-menu{
+  text-align:right;
+}
+.missingInfo .col-md-4{
+  max-width:30%;
+}
+.missingInfo .col-md-8{
+  max-width:68%;
+}
+.required{
+  color:#df0000;
+}
+#addStatusActive,.resultsDropVal input[type=checkbox]{
+  visibility: hidden;
+}
+.custCheckBox{
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 1px solid black;
+  border-radius: 3px;
+  position: relative;
+  left: -6px;
+  top: -2px;
+  vertical-align: middle;
+}
+.missingResultsDropDown ul{
+  left: 29.5% !important;
+  top: 92% !important;
+  width: 70.5% !important;
+}
+.default.checked,.bankInfo.checked,.invoice.checked,.custSetup.checked,.wireLine.checked{
+  background-image:url('./assets/images/Checked.png')
+}
+.statusInputContainer select,.selectContainer select {
+  background:url('./assets/images/downArrow.png');
+  background-repeat: no-repeat;
+  background-position: 95%;
+}
+.caretDrop{
+  background:url('./assets/images/downArrow.png');
+  background-repeat: no-repeat;
+  background-position: 48% 64%;
+}
